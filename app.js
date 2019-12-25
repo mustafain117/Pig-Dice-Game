@@ -1,7 +1,11 @@
-
+//variables
 var scores, roundScore, activePlayer, gameActive, gamesWon;
 
+
+//to keep track of number of games won for each player
 gamesWon = [0,0];
+
+//game setup
 initialize();
 function initialize(){
 
@@ -26,6 +30,7 @@ document.querySelector('.player-0-panel').classList.add('active');
 }
 
 
+//manages dice display, eventlistener and random number genarator for dice
 document.querySelector('.dice').style.display = 'none';
 
 var diceDOM =  document.querySelector('.dice');
@@ -51,7 +56,7 @@ document.querySelector('.btn-roll').addEventListener('click', function(){
     }
 });
 
-
+//Event Listener for hold button, adds round score to overall score
 document.querySelector('.btn-hold').addEventListener('click', function(){
     
     if(gameActive){
@@ -73,14 +78,16 @@ document.querySelector('.btn-hold').addEventListener('click', function(){
     
     }
     else{
+      //change player turn
        changePlayer();
     }
     }
 })
 
-
+//event listener for new game button, calls initialize function to setup for new game
 document.querySelector('.btn-new').addEventListener('click', initialize);
 
+//function to change player turn, called by hold button's event listener.
 function changePlayer(){
     activePlayer === 0 ? activePlayer = 1 : activePlayer = 0;
     roundScore = 0;
