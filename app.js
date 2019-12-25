@@ -1,3 +1,4 @@
+
 var scores, roundScore, activePlayer, gameActive, gamesWon;
 
 gamesWon = [0,0];
