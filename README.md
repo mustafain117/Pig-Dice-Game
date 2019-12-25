@@ -2,4 +2,4 @@
 
 Two player Pig Dice game implemented while learning Javascript. 
 
-<img src="https://github.com/mustafain117/Pig-Dice-Game/blob/master/gameScreen.png" height=200 width=200></> 
+<img src="https://github.com/mustafain117/Pig-Dice-Game/blob/master/gameScreen.png" height=500 width=600>
